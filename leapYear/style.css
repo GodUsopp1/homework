@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 5px;
+  background-image: url(./images.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first {
+  width: 700px;
+  display: flex;
+  padding: 5px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  gap: 5px;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#ytc {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.ficon {
+  margin-right: 20px;
+  margin-left: 2px;
+  padding: 4px 6.3px;
+  background-color: green;
+  border-radius: 50%;
+  color: white;
+  font-size: 10px;
+}
+#input_box {
+  outline: none;
+  border: none;
+  text-align: right;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 5px 0px;
+  padding-left: 50px;
+  background: none;
+  font-weight: 700;
+}
+#input_box:hover {
+  border: 1px solid rgb(19, 179, 115);
+  outline: 2px solid rgba(19, 179, 115, 0.195);
+}
+#input_box:focus {
+  outline: 3px solid rgba(19, 179, 115, 0.431);
+  border: 1px solid rgb(19, 179, 115);
+}
+#btn {
+  width: 690px;
+  background-color: rgb(222, 107, 0);
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px 0;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+#btn:hover {
+  background-color: rgb(171, 84, 3);
+}
+.sicon {
+  margin-right: 8px;
+}
+.second {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid grey;
+  padding: 2px;
+  border-radius: 3px;
+  gap: 2px;
+}
+.result {
+  display: flex;
+  width: 696px;
+  gap: 20px;
+  background-color: rgb(217, 217, 217);
+  padding: 8px;
+}
+.stitle {
+  width: 696px;
+  text-align: center;
+  background-color: #1b6997;
+  padding: 5px 0;
+  color: white;
+  border-radius: 3px 3px 0 0;
+  font-weight: 700;
+}
+.chk {
+  color: goldenrod;
+  margin-right: 3px;
+}
+.res1,
+.res2 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.res1 {
+  justify-content: right;
+}
+.res2 {
+  font-weight: bold;
+}

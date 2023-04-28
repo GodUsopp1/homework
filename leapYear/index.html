@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="input">
+                <div class="input1">
+                    <label for="input_box" id="ytc">Year to check<i class="fa-solid fa-question ficon"></i></label>
+                </div>
+                <div>
+                    <input type="number" name="" id="input_box" placeholder="e.g. 2024">
+                </div>
+            </div>
+            <button id="btn" onclick="calculation()"><i class="fa-solid fa-calculator sicon"></i>Calculate</button>
+        </div>
+        <div class="second">
+            <div class="stitle"><i class="fa-solid fa-check chk"></i>Calculation results</div>
+            <div class="result">
+                <div class="res1">
+                    <p>Is <span id="calc1">it</span> a leap year?</p>
+                </div>
+                <div class="res2"><span id="yesno"></span></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function calculation() {
+            let input = document.getElementById("input_box").value;
+            if (input == false) {
+                document.getElementById("yesno").innerHTML = "Please enter year to check"
+            }
+            else if (input % 4 === 0 && (input % 100 !== 0 || input % 400 === 0)) {
+                document.getElementById("calc1").innerHTML = input;
+                document.getElementById("yesno").innerHTML = "Yes";
+            }
+            else {
+                document.getElementById("calc1").innerHTML = input;
+                document.getElementById("yesno").innerHTML = "No";
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>
